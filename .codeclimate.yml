@@ -1,0 +1,19 @@
+---
+engines:
+  duplication:
+    config:
+      languages:
+        - javascript
+    enabled: true
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+exclude_paths:
+  - spec/**/**
+  - atom/**/**
+  - node_modules/**/**
+  - coverage/**/**
+ratings:
+  paths:
+    - lib/**
