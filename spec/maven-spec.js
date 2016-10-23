@@ -35,12 +35,11 @@ describe('When calling clean, insall or test.', function () {
 describe('When calling effectivePom', function () {
 
 	var actual;
-	var expected = undefined;
 	jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
 	beforeEach(function () {
 		actual = index.create('/workspace/made/up');
-		spyOn(actual, 'exec').and.returnValue(expected);
+		spyOn(actual, 'exec').and.returnValue(undefined);
 	});
 
 	var failTest = function (error) {
