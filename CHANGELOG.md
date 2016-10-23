@@ -1,5 +1,25 @@
 # Change Log
 
+## [Unreleased](https://github.com/concon121/node-maven-api/tree/HEAD)
+
+[Full Changelog](https://github.com/concon121/node-maven-api/compare/v1.0.1...HEAD)
+
+**Fixed bugs:**
+
+- EPERM: operation not permitted, write [\#7](https://github.com/concon121/node-maven-api/issues/7)
+
+## [v1.0.1](https://github.com/concon121/node-maven-api/tree/v1.0.1) (2016-10-23)
+[Full Changelog](https://github.com/concon121/node-maven-api/compare/v1.0.0...v1.0.1)
+
+**Fixed bugs:**
+
+- Scope of 'this' in Promise [\#5](https://github.com/concon121/node-maven-api/issues/5)
+
+**Merged pull requests:**
+
+- hotfix/eperm [\#8](https://github.com/concon121/node-maven-api/pull/8) ([concon121](https://github.com/concon121))
+- hotfix/scopeIssue [\#6](https://github.com/concon121/node-maven-api/pull/6) ([concon121](https://github.com/concon121))
+
 ## [v1.0.0](https://github.com/concon121/node-maven-api/tree/v1.0.0) (2016-10-23)
 **Merged pull requests:**
 
