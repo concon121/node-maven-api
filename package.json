@@ -24,12 +24,12 @@
         "codeclimate-test-reporter": "^0.3.1",
         "happiness": "^6.0.7",
         "istanbul": "^1.0.0-alpha.2",
-        "jasmine-focused": "^1.0.7",
+        "jasmine": "^2.5.2",
         "jshint": "^2.9.2"
     },
     "scripts": {
         "test": "node ./node_modules/jasmine/bin/jasmine spec/*-spec.js",
-        "coverage": "node ./node_modules/istanbul/lib/cli.js cover -v --include-all-sources node_modules/jasmine-focused/bin/jasmine-focused -R spec",
+        "coverage": "node ./node_modules/istanbul/lib/cli.js cover -v --include-all-sources node_modules/jasmine/bin/jasmine -R spec/*-spec.js",
         "quality": "node ./node_modules/jshint/bin/jshint lib/index.js lib/mvn.js"
     },
     "standard": {
