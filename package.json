@@ -29,7 +29,7 @@
     },
     "scripts": {
         "test": "node ./node_modules/jasmine/bin/jasmine spec/*-spec.js",
-        "coverage": "node ./node_modules/istanbul/lib/cli.js cover -v --include-all-sources node_modules/jasmine/bin/jasmine -R spec/*-spec.js",
+        "coverage": "node ./node_modules/istanbul/lib/cli.js cover -v --include-all-sources node_modules/jasmine/bin/jasmine.js -R spec/*-spec.js",
         "quality": "node ./node_modules/jshint/bin/jshint lib/index.js lib/mvn.js"
     },
     "standard": {
