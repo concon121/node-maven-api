@@ -35,12 +35,12 @@ describe('When calling clean, insall or test.', function () {
 describe('When calling effectivePom', function () {
 
 	var actual;
-	var expected = 123;
+	var expected = undefined;
 	jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
 	beforeEach(function () {
 		actual = index.create('/workspace/made/up');
-		spyOn(actual, 'execSync').and.returnValue(expected);
+		spyOn(actual, 'exec').and.returnValue(expected);
 	});
 
 	var failTest = function (error) {
@@ -51,7 +51,7 @@ describe('When calling effectivePom', function () {
 		expect(actual).toBeDefined();
 		expect(actual.pom).toBeDefined();
 		var effectivePomPromise = actual.effectivePom();
-		expect(actual.execSync).not.toHaveBeenCalled();
+		expect(actual.exec).not.toHaveBeenCalled();
 		expect(effectivePomPromise).toBeDefined();
 		effectivePomPromise.then(function (result) {
 			expect(result).not.toBeDefined();
