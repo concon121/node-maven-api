@@ -56,3 +56,12 @@ promise.then((result) => {
     console.log('Effective POM is: ', result);
 });
 ```
+
+### Custom Command
+
+The API provided by this module can not possibly cover every maven goal, there is far too many!  You can run any command you need with the execCommand function.
+
+```
+// mvn clean install -f /path/to/my/pom.xml
+mvn.execCommand('clean install');
+```
