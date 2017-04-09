@@ -1,12 +1,30 @@
 # Change Log
 
-## [Unreleased](https://github.com/concon121/node-maven-api/tree/HEAD)
+## [v2.0.0](https://github.com/concon121/node-maven-api/tree/v2.0.0) (2017-04-09)
+[Full Changelog](https://github.com/concon121/node-maven-api/compare/v1.1.0...v2.0.0)
 
-[Full Changelog](https://github.com/concon121/node-maven-api/compare/v1.0.1...HEAD)
+**Implemented enhancements:**
+
+- Non Blocking [\#12](https://github.com/concon121/node-maven-api/issues/12)
+
+**Merged pull requests:**
+
+- Feature/non blocking [\#11](https://github.com/concon121/node-maven-api/pull/11) ([concon121](https://github.com/concon121))
+
+## [v1.1.0](https://github.com/concon121/node-maven-api/tree/v1.1.0) (2016-11-27)
+[Full Changelog](https://github.com/concon121/node-maven-api/compare/v1.0.1...v1.1.0)
+
+**Implemented enhancements:**
+
+- Return promises from commands [\#9](https://github.com/concon121/node-maven-api/issues/9)
 
 **Fixed bugs:**
 
 - EPERM: operation not permitted, write [\#7](https://github.com/concon121/node-maven-api/issues/7)
+
+**Merged pull requests:**
+
+- Feature/return promises [\#10](https://github.com/concon121/node-maven-api/pull/10) ([concon121](https://github.com/concon121))
 
 ## [v1.0.1](https://github.com/concon121/node-maven-api/tree/v1.0.1) (2016-10-23)
 [Full Changelog](https://github.com/concon121/node-maven-api/compare/v1.0.0...v1.0.1)
