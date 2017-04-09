@@ -10,5 +10,12 @@
 		"require": true,
 		"spyOn": true
 	},
-	"space-before-function-paren": ["error", "never"]
+	"rules": {
+		"semi": ["error", "always"],
+		"space-before-function-paren": ["error", {
+			"anonymous": "ignore",
+			"named": "ignore",
+			"asyncArrow": "ignore"
+		}],
+	}
 }

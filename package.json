@@ -25,6 +25,7 @@
 		"eslint-config-standard": "^10.2.0",
 		"eslint-plugin-import": "^2.2.0",
 		"eslint-plugin-node": "^4.2.2",
+		"eslint-plugin-promise": "^3.5.0",
 		"eslint-plugin-standard": "^3.0.1",
 		"istanbul": "^1.0.0-alpha.2",
 		"jasmine": "^2.5.2",
@@ -33,7 +34,9 @@
 	"scripts": {
 		"test": "node ./node_modules/jasmine/bin/jasmine spec/*-spec.js",
 		"coverage": "node ./node_modules/istanbul/lib/cli.js cover -v --include-all-sources node_modules/jasmine/bin/jasmine.js -R spec/*-spec.js",
-		"quality": "node ./node_modules/jshint/bin/jshint lib/*.js"
+		"jshint": "node ./node_modules/jshint/bin/jshint lib/*.js",
+		"es": "node ./node_modules/eslint/bin/eslint lib/*.js",
+		"quality": "npm run jshint && npm run es"
 	},
 	"standard": {
 		"globals": [
