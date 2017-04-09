@@ -7,7 +7,7 @@ if (process.env.COVERAGE && process.env.COVERAGE.indexOf('true') >= 0) {
 
 var index = require('../lib/index');
 
-describe('When calling clean, insall or test.', function () {
+describe('When calling clean, install or test.', function () {
 
 	var actual;
 
@@ -49,16 +49,15 @@ describe('When calling effectivePom', function () {
 	it('A JSON effective pom is not returned when no output location is provided.', function (done) {
 		expect(actual).toBeDefined();
 		expect(actual.pom).toBeDefined();
+
+		actual.registerEvent('effective-pom-failed', (result) => {
+			expect(result).not.toBeDefined();
+			done();
+		});
+
 		var effectivePomPromise = actual.effectivePom();
 		expect(actual.exec).not.toHaveBeenCalled();
 		expect(effectivePomPromise).toBeDefined();
-		effectivePomPromise.then(function (result) {
-			expect(result).not.toBeDefined();
-			done();
-		}, function (err) {
-			expect(err).toBeDefined();
-			done();
-		}).catch(failTest);
 	});
 
 });
