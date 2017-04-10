@@ -1,5 +1,20 @@
 # Change Log
 
+## [Unreleased](https://github.com/concon121/node-maven-api/tree/HEAD)
+
+[Full Changelog](https://github.com/concon121/node-maven-api/compare/v2.0.1...HEAD)
+
+**Fixed bugs:**
+
+- 1 event triggers builds for every pom  [\#13](https://github.com/concon121/node-maven-api/issues/13)
+
+## [v2.0.1](https://github.com/concon121/node-maven-api/tree/v2.0.1) (2017-04-10)
+[Full Changelog](https://github.com/concon121/node-maven-api/compare/v2.0.0...v2.0.1)
+
+**Merged pull requests:**
+
+- Feature/event names [\#14](https://github.com/concon121/node-maven-api/pull/14) ([concon121](https://github.com/concon121))
+
 ## [v2.0.0](https://github.com/concon121/node-maven-api/tree/v2.0.0) (2017-04-09)
 [Full Changelog](https://github.com/concon121/node-maven-api/compare/v1.1.0...v2.0.0)
 
