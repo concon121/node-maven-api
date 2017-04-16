@@ -1,7 +1,7 @@
 {
   "name": "node-maven-api",
   "main": "./lib/index",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Run maven commands via a node js api!",
   "keywords": [
     "apache",
